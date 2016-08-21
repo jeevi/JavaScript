@@ -1,0 +1,19 @@
+.entire-page {
+  background-color: #ffffff;
+  margin: 10px 20px 10px 20px
+}
+
+h1{
+  margin: 3px;
+}
+
+.entire-text {
+  color: #001855;
+  margin: 20px 40px 20px 40px;
+}
+
+#image-center {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+}
