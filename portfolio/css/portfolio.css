@@ -1,0 +1,33 @@
+
+
+.portfolio{
+  margin-top: 30px;
+}
+
+.contact{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.separator{
+  margin-top:120px;
+}
+.control-group{
+  margin-top:2px;
+  margin-bottom:5px;
+}
+
+.carousel-inner .item img {
+  margin: auto;
+}
+
+.separator{
+	vertical-align: middle;
+}
+
+.social-media a{
+	vertical-align: middle;
+}
+
+.background{
+  font-family: Lucida Grande;
+}
