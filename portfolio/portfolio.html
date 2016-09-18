@@ -1,3 +1,4 @@
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -5,12 +6,21 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 
 <div class="container background">
-  <div class="header">
-    <div>
-      <h1 class="text-center">Chiranjeevi Balawat</h1>
+  <div class="header col-xs-12">
+    <div class="col-xs-6 ">
+      <h1 class="my-name">Chiranjeevi Balawat</h1>
+    </div>
+    <div class="col-xs-6">
+      <button class="btn btn-primary btn-default col-xs-2 text-center to-about"><a href="#"></a>About</button>
+      <div class="col-xs-1"></div>
+      <button class="btn btn-primary btn-default col-xs-2 text-center to-portfolio"><a href="#"></a>Portfolio</button>
+      <div class="col-xs-1"></div>
+      <button class="btn btn-primary btn-default col-xs-2 text-center to-dishes"><a href="#"></a>Dishes</button>
+      <div class="col-xs-1"></div>
+      <button class="btn btn-primary btn-default col-xs-2 text-center to-contact"><a href="#"></a>Contact</button>
     </div>
   </div>
-  <div class="container content">
+  <div class="content">
     <div class="about">
       <h3 class="text-center">
         About Me
@@ -23,6 +33,45 @@
     <div class="portfolio">
       <h3 class="text-center">
         Portfolio
+      </h3>
+      <div class="grid">
+        <div class="row">
+          <div class="col-xs-4">
+            <div>
+              <a href="http://codepen.io/cbalawat/full/beBWbg/"><img src="img/wt57de4b39c82cd-thumb_medium2.jpg" alt="My first codepen" class="img-responsive"></a>
+            </div>
+            <div class="caption">
+              <p class="text-center">
+                My first codepen pen
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div>
+              <a href="http://chiranjeevibalawat.wordpress.com/"><img src="img/wt57de4b90b91dd-thumb_medium2.jpg" alt="My blog site" class="img-responsive"></a>
+            </div>
+            <div class="caption">
+              <p class="text-center">
+                My blog
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div>
+              <a href="https://sites.google.com/site/cbalawat/"><img src="img/wt57de4ac44f4a9-thumb_medium2.jpg" alt="My google site" class="img-responsive"></a>
+            </div>
+            <div class="caption">
+              <p class="text-center">
+                My google site
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-blog">
+      <h3 class="text-center">
+        Carousel of dishes
       </h3>
       <p>
       My favorite hobby is cooking. I call it my 'unwinding routine'. I own a <a href="http://chiranjeevibalawat.wordpress.com">blog</a>
@@ -138,8 +187,8 @@
           </div>
         </form>
       </div>
-      <div class="col-xs-2 ">
-        <h5 class="separator text-center"> -OR- </h5>
+      <div class="col-xs-2 contact-separator">
+        <h5 class="text-center"> -OR- </h5>
       </div>
       <div class="col-xs-5 social-media">
         <a class="btn btn-block btn-default btn-social-icon btn-twitter" href="https://twitter.com/desi_spartan"><i class="fa fa-twitter"></i></a>
@@ -152,13 +201,34 @@
      </div>
     </div>
   </div>
-  <div class="footer">
-
-  </div>
 </div>
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".to-about").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".about").offset().top},
+          'slow');
+  });
+  $(".to-dishes").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".carousel-blog").offset().top},
+          'slow');
+  });
+  $(".to-portfolio").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".portfolio").offset().top},
+          'slow');
+  });
+  $(".to-contact").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".contact").offset().top},
+          'slow');
+  });
+});
+</script>
+
